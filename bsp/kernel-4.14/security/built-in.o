@@ -1,0 +1,37 @@
+!<thin>
+//                                              322       `
+keys/gc.o/
+keys/key.o/
+keys/keyring.o/
+keys/keyctl.o/
+keys/permission.o/
+keys/process_keys.o/
+keys/request_key.o/
+keys/request_key_auth.o/
+keys/user_defined.o/
+keys/proc.o/
+keys/sysctl.o/
+keys/persistent.o/
+keys/encrypted-keys/encrypted.o/
+keys/encrypted-keys/ecryptfs_format.o/
+commoncap.o/
+min_addr.o/
+device_cgroup.o/
+
+/0              0           0     0     644     5860      `
+/11             0           0     0     644     15552     `
+/23             0           0     0     644     14904     `
+/39             0           0     0     644     14604     `
+/54             0           0     0     644     2084      `
+/73             0           0     0     644     9440      `
+/94             0           0     0     644     10156     `
+/114            0           0     0     644     4472      `
+/139            0           0     0     644     5336      `
+/160            0           0     0     644     7004      `
+/173            0           0     0     644     1936      `
+/188            0           0     0     644     2724      `
+/207            0           0     0     644     15776     `
+/240            0           0     0     644     2340      `
+/279            0           0     0     644     11200     `
+/292            0           0     0     644     2136      `
+/304           /0           0     0     644     7580      `

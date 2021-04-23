@@ -1,0 +1,61 @@
+!<thin>
+//                                              354       `
+trace.o/
+nfssvc.o/
+nfsctl.o/
+nfsproc.o/
+nfsfh.o/
+vfs.o/
+export.o/
+auth.o/
+lockd.o/
+nfscache.o/
+nfsxdr.o/
+stats.o/
+fault_inject.o/
+nfs2acl.o/
+nfs3proc.o/
+nfs3xdr.o/
+nfs3acl.o/
+nfs4proc.o/
+nfs4xdr.o/
+nfs4state.o/
+nfs4idmap.o/
+nfs4acl.o/
+nfs4callback.o/
+nfs4recover.o/
+nfs4layouts.o/
+blocklayout.o/
+blocklayoutxdr.o/
+flexfilelayout.o/
+flexfilelayoutxdr.o/
+
+/0              0           0     0     644     756       `
+/9              0           0     0     644     11456     `
+/19             0           0     0     644     17912     `
+/29             0           0     0     644     10372     `
+/40             0           0     0     644     8164      `
+/49             0           0     0     644     22616     `
+/56             0           0     0     644     18012     `
+/66             0           0     0     644     2688      `
+/74             0           0     0     644     1888      `
+/83             0           0     0     644     8044      `
+/95             0           0     0     644     6696      `
+/105            0           0     0     644     3288      `
+/114            0           0     0     644     4512      `
+/130            0           0     0     644     7312      `
+/141            0           0     0     644     11360     `
+/153            0           0     0     644     14324     `
+/164            0           0     0     644     5788      `
+/175            0           0     0     644     28788     `
+/187            0           0     0     644     49748     `
+/198            0           0     0     644     78740     `
+/211            0           0     0     644     11284     `
+/224            0           0     0     644     10376     `
+/235            0           0     0     644     11528     `
+/251            0           0     0     644     29280     `
+/266            0           0     0     644     12504     `
+/281            0           0     0     644     5664      `
+/296            0           0     0     644     3416      `
+/314            0           0     0     644     2652      `
+/332            0           0     0     644     2196      `

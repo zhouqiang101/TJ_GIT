@@ -1,0 +1,3 @@
+dram_sunxi_dw.c:19:13:mctl_phy_init	0	static
+dram_sunxi_dw.c:335:13:mctl_set_cr.constprop	8	static
+dram_sunxi_dw.c:685:15:sunxi_dram_init	184	static

@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/function/usb_f_uac1_legacy.o := rm -f drivers/usb/gadget/function/usb_f_uac1_legacy.o; arm-linux-ar rcSTPD drivers/usb/gadget/function/usb_f_uac1_legacy.o drivers/usb/gadget/function/f_uac1_legacy.o drivers/usb/gadget/function/u_uac1_legacy.o

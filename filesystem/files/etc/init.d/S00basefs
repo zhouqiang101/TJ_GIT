@@ -1,0 +1,126 @@
+#!/bin/sh
+
+flash_led_on() {
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_eth
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_wifi
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_lte
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_bt
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_jack
+}
+
+flash_led_off() {
+	echo 0 > /sys/bus/i2c/devices/2-0030/led_eth
+	echo 0 > /sys/bus/i2c/devices/2-0030/led_wifi
+	echo 0 > /sys/bus/i2c/devices/2-0030/led_lte
+	echo 0 > /sys/bus/i2c/devices/2-0030/led_bt
+	echo 0 > /sys/bus/i2c/devices/2-0030/led_jack
+}
+
+flash_led_done() {
+	flash_led_off
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_eth
+	sleep 0.3
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_wifi
+	sleep 0.3
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_lte
+	sleep 0.3
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_bt
+	sleep 0.3
+	echo 1 > /sys/bus/i2c/devices/2-0030/led_jack
+	sleep 0.3
+	sleep 0.5
+	flash_led_off
+}
+
+flash_led_err() {
+	flash_led_on
+	sleep 0.5
+	flash_led_off
+	sleep 0.5
+}
+
+case "$1" in
+	start)
+		echo "Prepare base filesystem ..."
+
+		# Extract ramfs
+		/bin/tar -xf /usr/share/rofs/var.tar.gz -C /var/ >/dev/null 2>&1
+		/bin/tar -xf /usr/share/rofs/ssh.tar.gz -C /etc/ssh/ >/dev/null 2>&1
+
+		# Check hardware
+		/bin/system_check
+		if [ $? -ne 0 ]; then
+			echo "[ERROR] Hardware malfunction"
+			while [ true ]; do
+				sleep 1
+			done
+		fi
+
+		# Startup audio system
+		echo 1 > /sys/bus/i2c/devices/2-0013/init_chip
+		echo 1 > /sys/bus/i2c/devices/2-0013/audio_sel
+		echo 1 > /sys/bus/i2c/devices/2-0030/amp_init
+		echo 0 > /sys/bus/i2c/devices/2-0030/volume
+
+		# Make all IPC tunnels ready
+		echo 1 > /sys/bus/i2c/devices/2-0030/ipc_12_ready
+
+		# Mount boot partition
+		/bin/mount -n -o ro /dev/mmcblk0p1 /boot
+
+		# Resize app partition
+		if [ ! -f /boot/app_part.resized ]; then
+			echo "Resize app partition ..."
+			/usr/sbin/parted -s /dev/mmcblk0 unit % resizepart 3 100
+			/sbin/resize2fs -f /dev/mmcblk0p3
+			/sbin/mkfs.ext4 -F -L app /dev/mmcblk0p3
+			/bin/mount -n -o remount,rw /dev/mmcblk0p1 /boot
+			echo "1" > /boot/app_part.resized
+			/bin/sync
+			/bin/mount -n -o remount,ro /dev/mmcblk0p1 /boot
+		else
+			# Check factory reset
+			/bin/cat /sys/bus/i2c/devices/2-0030/factory_reset | grep -i "1" >/dev/null 2>&1
+			if [ $? -eq 0 ]; then
+				echo "Perform factory reset ..."
+				flash_led_off
+				flash_led_on
+				sleep 5
+				/sbin/mkfs.ext4 -F -L app /dev/mmcblk0p3
+				flash_led_done
+			fi
+		fi
+
+		# Mount app partition
+		/sbin/fsck.ext4 -p /dev/mmcblk0p3
+		/bin/mount -n -o defaults /dev/mmcblk0p3 /app
+		if [ $? -ne 0 ]; then
+			echo "Remake app partition ..."
+			flash_led_off
+			flash_led_on
+			/sbin/mkfs.ext4 -F -L app /dev/mmcblk0p3
+			flash_led_done
+			/bin/mount -n -o defaults /dev/mmcblk0p3 /app
+			if [ $? -ne 0 ]; then
+				echo "[ERROR] System partition error"
+				flash_led_off
+				while [ true ]; do
+					flash_led_err
+				done
+			fi
+		fi
+		;;
+	stop)
+		echo "Safely umount partitions ..."
+		/bin/sync
+		/bin/umount -r /dev/mmcblk0p3
+		/bin/umount -r /dev/mmcblk0p1
+		;;
+	restart|reload)
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?

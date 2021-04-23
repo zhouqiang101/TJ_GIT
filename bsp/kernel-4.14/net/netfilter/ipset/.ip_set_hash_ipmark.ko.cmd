@@ -1,0 +1,1 @@
+cmd_net/netfilter/ipset/ip_set_hash_ipmark.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o net/netfilter/ipset/ip_set_hash_ipmark.ko net/netfilter/ipset/ip_set_hash_ipmark.o net/netfilter/ipset/ip_set_hash_ipmark.mod.o ;  true

@@ -1,0 +1,1 @@
+cmd_drivers/usb/chipidea/ci_hdrc_tegra.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/chipidea/ci_hdrc_tegra.ko drivers/usb/chipidea/ci_hdrc_tegra.o drivers/usb/chipidea/ci_hdrc_tegra.mod.o ;  true

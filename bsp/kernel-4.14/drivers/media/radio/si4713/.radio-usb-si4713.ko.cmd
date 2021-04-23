@@ -1,0 +1,1 @@
+cmd_drivers/media/radio/si4713/radio-usb-si4713.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/radio/si4713/radio-usb-si4713.ko drivers/media/radio/si4713/radio-usb-si4713.o drivers/media/radio/si4713/radio-usb-si4713.mod.o ;  true

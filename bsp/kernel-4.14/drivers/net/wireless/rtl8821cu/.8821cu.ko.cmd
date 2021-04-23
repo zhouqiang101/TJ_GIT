@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/rtl8821cu/8821cu.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/net/wireless/rtl8821cu/8821cu.ko drivers/net/wireless/rtl8821cu/8821cu.o drivers/net/wireless/rtl8821cu/8821cu.mod.o ;  true

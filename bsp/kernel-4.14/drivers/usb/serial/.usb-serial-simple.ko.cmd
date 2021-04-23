@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/usb-serial-simple.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/serial/usb-serial-simple.ko drivers/usb/serial/usb-serial-simple.o drivers/usb/serial/usb-serial-simple.mod.o ;  true

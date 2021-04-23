@@ -1,0 +1,31 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		printf "Starting sysmanager: "
+		# Start hl_sysmanager daemon
+		/app/bin/iptables -A INPUT -m limit --limit 2500/s --limit-burst 2500 -j ACCEPT  >/dev/null 2>&1
+        /app/bin/iptables -A INPUT -j DROP  >/dev/null 2>&1
+		/app/bin/hl_sysmanager >/dev/null 2>&1
+		if [ $? -ne 0 ]; then
+			# Launch failed, report error to INIT
+			echo "INIT_ERROR" > /sys/bus/i2c/devices/2-0030/syserr
+			echo "FAIL"
+		else
+			# Launch succeed
+			echo "OK"
+		fi
+		;;
+	stop)
+		printf "Stopping sysmanager: "
+		killall -w -9 hl_sysmanager >/dev/null 2>&1
+		echo "OK"
+		;;
+	restart|reload)
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?

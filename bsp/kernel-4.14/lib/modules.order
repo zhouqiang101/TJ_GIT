@@ -1,0 +1,11 @@
+kernel/lib/crc-ccitt.ko
+kernel/lib/crc-itu-t.ko
+kernel/lib/xxhash.ko
+kernel/lib/zstd/zstd_compress.ko
+kernel/lib/zstd/zstd_decompress.ko
+kernel/lib/zstd/zstd_compress.ko
+kernel/lib/zstd/zstd_decompress.ko
+kernel/lib/raid6/raid6_pq.ko
+kernel/lib/ts_kmp.ko
+kernel/lib/ts_bm.ko
+kernel/lib/ts_fsm.ko

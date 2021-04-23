@@ -1,0 +1,108 @@
+!<thin>
+//                                              1178      `
+i2c/ov5640.o/
+i2c/ir-kbd-i2c.o/
+media-device.o/
+media-devnode.o/
+media-entity.o/
+v4l2-core/v4l2-fwnode.o/
+v4l2-core/v4l2-dev.o/
+v4l2-core/v4l2-ioctl.o/
+v4l2-core/v4l2-device.o/
+v4l2-core/v4l2-fh.o/
+v4l2-core/v4l2-event.o/
+v4l2-core/v4l2-ctrls.o/
+v4l2-core/v4l2-subdev.o/
+v4l2-core/v4l2-clk.o/
+v4l2-core/v4l2-async.o/
+v4l2-core/v4l2-mc.o/
+v4l2-core/v4l2-common.o/
+v4l2-core/v4l2-dv-timings.o/
+v4l2-core/videobuf2-core.o/
+v4l2-core/videobuf2-v4l2.o/
+v4l2-core/videobuf2-memops.o/
+v4l2-core/videobuf2-vmalloc.o/
+v4l2-core/videobuf2-dma-contig.o/
+dvb-core/dvbdev.o/
+dvb-core/dmxdev.o/
+dvb-core/dvb_demux.o/
+dvb-core/dvb_ca_en50221.o/
+dvb-core/dvb_frontend.o/
+dvb-core/dvb_net.o/
+dvb-core/dvb_ringbuffer.o/
+dvb-core/dvb_math.o/
+rc/rc-main.o/
+rc/rc-ir-raw.o/
+rc/lirc_dev.o/
+rc/ir-nec-decoder.o/
+rc/ir-rc5-decoder.o/
+rc/ir-rc6-decoder.o/
+rc/ir-jvc-decoder.o/
+rc/ir-sony-decoder.o/
+rc/ir-sanyo-decoder.o/
+rc/ir-sharp-decoder.o/
+rc/ir-mce_kbd-decoder.o/
+rc/ir-lirc-codec.o/
+rc/ir-xmp-decoder.o/
+rc/sunxi-cir.o/
+cec/cec-core.o/
+cec/cec-adap.o/
+cec/cec-api.o/
+cec/cec-edid.o/
+cec/cec-notifier.o/
+cec/cec-pin.o/
+platform/sunxi/sun6i-csi/sun6i_video.o/
+platform/sunxi/sun6i-csi/sun6i_csi.o/
+/0              0           0     0     644     31660     `
+/14             0           0     0     644     11372     `
+/32             0           0     0     644     12612     `
+/48            /0           0     0     644     6648      `
+/65             0           0     0     644     18232     `
+/81             0           0     0     644     7472      `
+/106            0           0     0     644     20016     `
+/128            0           0     0     644     61420     `
+/152            0           0     0     644     7052      `
+/177            0           0     0     644     4588      `
+/198            0           0     0     644     8600      `
+/222            0           0     0     644     73648     `
+/246            0           0     0     644     10368     `
+/271            0           0     0     644     8656      `
+/293            0           0     0     644     6548      `
+/317            0           0     0     644     5920      `
+/338            0           0     0     644     8116      `
+/363            0           0     0     644     26688     `
+/392            0           0     0     644     40340     `
+/420            0           0     0     644     21140     `
+/448            0           0     0     644     2940      `
+/478            0           0     0     644     7956      `
+/509            0           0     0     644     13212     `
+/543            0           0     0     644     12224     `
+/562            0           0     0     644     16208     `
+/581            0           0     0     644     15848     `
+/603            0           0     0     644     24220     `
+/630            0           0     0     644     26924     `
+/655            0           0     0     644     17860     `
+/675            0           0     0     644     7792      `
+/702            0           0     0     644     2760      `
+/723            0           0     0     644     27944     `
+/737            0           0     0     644     12508     `
+/753            0           0     0     644     14008     `
+/768            0           0     0     644     5048      `
+/789            0           0     0     644     5556      `
+/810            0           0     0     644     6428      `
+/831            0           0     0     644     5040      `
+/852            0           0     0     644     4996      `
+/874            0           0     0     644     5280      `
+/897            0           0     0     644     5072      `
+/920            0           0     0     644     7992      `
+/945           /0           0     0     644     7688      `
+/965            0           0     0     644     5652      `
+/986            0           0     0     644     7804      `
+/1002           0           0     0     644     10092     `
+/1018           0           0     0     644     27148     `
+/1034           0           0     0     644     9220      `
+/1049           0           0     0     644     3476      `
+/1065           0           0     0     644     4924      `
+/1085           0           0     0     644     12020     `
+/1100           0           0     0     644     11404     `
+/1140           0           0     0     644     15492     `

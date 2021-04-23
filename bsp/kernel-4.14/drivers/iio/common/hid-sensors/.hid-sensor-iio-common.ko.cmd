@@ -1,0 +1,1 @@
+cmd_drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/iio/common/hid-sensors/hid-sensor-iio-common.ko drivers/iio/common/hid-sensors/hid-sensor-iio-common.o drivers/iio/common/hid-sensors/hid-sensor-iio-common.mod.o ;  true

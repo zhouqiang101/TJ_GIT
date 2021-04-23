@@ -1,0 +1,119 @@
+!<thin>
+//                                              880       `
+sound.o/
+init.o/
+memory.o/
+control.o/
+misc.o/
+device.o/
+info.o/
+info_oss.o/
+sound_oss.o/
+vmaster.o/
+ctljack.o/
+jack.o/
+timer.o/
+hrtimer.o/
+pcm.o/
+pcm_native.o/
+pcm_lib.o/
+pcm_misc.o/
+pcm_memory.o/
+memalloc.o/
+pcm_timer.o/
+pcm_drm_eld.o/
+pcm_iec958.o/
+pcm_dmaengine.o/
+seq_device.o/
+rawmidi.o/
+oss/mixer_oss.o/
+oss/pcm_oss.o/
+oss/pcm_plugin.o/
+oss/io.o/
+oss/copy.o/
+oss/linear.o/
+oss/mulaw.o/
+oss/route.o/
+oss/rate.o/
+seq/seq.o/
+seq/seq_lock.o/
+seq/seq_clientmgr.o/
+seq/seq_memory.o/
+seq/seq_queue.o/
+seq/seq_fifo.o/
+seq/seq_prioq.o/
+seq/seq_timer.o/
+seq/seq_system.o/
+seq/seq_ports.o/
+seq/seq_info.o/
+seq/oss/seq_oss.o/
+seq/oss/seq_oss_init.o/
+seq/oss/seq_oss_timer.o/
+seq/oss/seq_oss_ioctl.o/
+seq/oss/seq_oss_event.o/
+seq/oss/seq_oss_rw.o/
+seq/oss/seq_oss_synth.o/
+seq/oss/seq_oss_midi.o/
+seq/oss/seq_oss_readq.o/
+seq/oss/seq_oss_writeq.o/
+seq/seq_midi.o/
+seq/seq_midi_event.o/
+
+/0              0           0     0     644     10540     `
+/9              0           0     0     644     17692     `
+/17             0           0     0     644     2316      `
+/27             0           0     0     644     25576     `
+/38             0           0     0     644     1580      `
+/46             0           0     0     644     4044      `
+/56             0           0     0     644     13692     `
+/64             0           0     0     644     4628      `
+/76             0           0     0     644     5808      `
+/89             0           0     0     644     6712      `
+/100            0           0     0     644     2324      `
+/111            0           0     0     644     5864      `
+/119            0           0     0     644     29932     `
+/128            0           0     0     644     4684      `
+/139            0           0     0     644     22520     `
+/146            0           0     0     644     40588     `
+/160            0           0     0     644     31140     `
+/171            0           0     0     644     8628      `
+/183            0           0     0     644     7876      `
+/197            0           0     0     644     4584      `
+/209            0           0     0     644     3124      `
+/222            0           0     0     644     2536      `
+/237            0           0     0     644     2764      `
+/251           /0           0     0     644     7112      `
+/268            0           0     0     644     8548      `
+/282            0           0     0     644     30136     `
+/293            0           0     0     644     20168     `
+/310            0           0     0     644     32520     `
+/325            0           0     0     644     7996      `
+/343            0           0     0     644     2508      `
+/353            0           0     0     644     2036      `
+/365            0           0     0     644     2644      `
+/379            0           0     0     644     3196      `
+/392            0           0     0     644     1952      `
+/405            0           0     0     644     3832      `
+/417            0           0     0     644     4520      `
+/428            0           0     0     644     1980      `
+/444           /0           0     0     644     32584     `
+/465            0           0     0     644     8076      `
+/483            0           0     0     644     12556     `
+/500            0           0     0     644     4608      `
+/516            0           0     0     644     3664      `
+/533            0           0     0     644     7308      `
+/550            0           0     0     644     3424      `
+/568            0           0     0     644     9072      `
+/585            0           0     0     644     3116      `
+/601            0           0     0     644     6740      `
+/620            0           0     0     644     8992      `
+/644           /0           0     0     644     3364      `
+/669           /0           0     0     644     4104      `
+/694           /0           0     0     644     5428      `
+/719            0           0     0     644     3284      `
+/741           /0           0     0     644     9440      `
+/766            0           0     0     644     9432      `
+/790           /0           0     0     644     4144      `
+/815            0           0     0     644     3284      `
+/841            0           0     0     644     8896      `
+/857            0           0     0     644     9336      `

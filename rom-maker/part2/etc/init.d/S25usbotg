@@ -1,0 +1,22 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		printf "Enable usb-otg port: "
+		/sbin/modprobe g_mass_storage file=/dev/mmcblk0p1
+		if [ $? -eq 0 ]; then
+			echo "OK"
+		else
+			echo "FAIL"
+		fi
+		;;
+	stop)
+		;;
+	restart|reload)
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?

@@ -1,0 +1,1 @@
+cmd_sound/usb/line6/snd-usb-variax.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o sound/usb/line6/snd-usb-variax.ko sound/usb/line6/snd-usb-variax.o sound/usb/line6/snd-usb-variax.mod.o ;  true

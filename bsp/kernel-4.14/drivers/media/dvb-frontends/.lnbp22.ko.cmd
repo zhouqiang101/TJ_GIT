@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/lnbp22.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/lnbp22.ko drivers/media/dvb-frontends/lnbp22.o drivers/media/dvb-frontends/lnbp22.mod.o ;  true

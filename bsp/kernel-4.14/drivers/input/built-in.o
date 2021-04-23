@@ -1,0 +1,26 @@
+!<thin>
+//                                              204       `
+input.o/
+input-compat.o/
+input-mt.o/
+ff-core.o/
+input-polldev.o/
+input-leds.o/
+mousedev.o/
+evdev.o/
+keyboard/gpio_keys.o/
+keyboard/gpio_keys_polled.o/
+touchscreen/of_touchscreen.o/
+touchscreen/ads7846.o/
+/0              0           0     0     644     40464     `
+/9              0           0     0     644     2568      `
+/25             0           0     0     644     7472      `
+/37             0           0     0     644     5492      `
+/48            /0           0     0     644     7080      `
+/65             0           0     0     644     5508      `
+/79             0           0     0     644     16820     `
+/91             0           0     0     644     16800     `
+/100            0           0     0     644     14860     `
+/122            0           0     0     644     8748      `
+/151            0           0     0     644     4336      `
+/181            0           0     0     644     17096     `

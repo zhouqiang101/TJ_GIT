@@ -1,0 +1,9 @@
+sun6i-a31-i7.o: arch/arm/boot/dts/sun6i-a31-i7.dts \
+ arch/arm/boot/dts/sun6i-a31.dtsi arch/arm/boot/dts/skeleton.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+ scripts/dtc/include-prefixes/dt-bindings/thermal/thermal.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun6i-a31-ccu.h \
+ scripts/dtc/include-prefixes/dt-bindings/reset/sun6i-a31-ccu.h \
+ arch/arm/boot/dts/sunxi-common-regulators.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h

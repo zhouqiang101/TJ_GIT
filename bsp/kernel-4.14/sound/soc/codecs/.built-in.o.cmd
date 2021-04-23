@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/built-in.o :=  rm -f sound/soc/codecs/built-in.o; arm-linux-ar rcSTPD sound/soc/codecs/built-in.o sound/soc/codecs/snd-soc-hdmi-codec.o sound/soc/codecs/snd-soc-pcm5102a.o sound/soc/codecs/snd-soc-spdif-rx.o sound/soc/codecs/snd-soc-spdif-tx.o 

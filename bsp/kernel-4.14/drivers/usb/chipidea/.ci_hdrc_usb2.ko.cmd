@@ -1,0 +1,1 @@
+cmd_drivers/usb/chipidea/ci_hdrc_usb2.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/chipidea/ci_hdrc_usb2.ko drivers/usb/chipidea/ci_hdrc_usb2.o drivers/usb/chipidea/ci_hdrc_usb2.mod.o ;  true

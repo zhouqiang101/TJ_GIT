@@ -1,0 +1,12 @@
+sun7i-a20-olinuxino-lime2-emmc.o: \
+ arch/arm/boot/dts/sun7i-a20-olinuxino-lime2-emmc.dts \
+ arch/arm/boot/dts/sun7i-a20-olinuxino-lime2.dts \
+ arch/arm/boot/dts/sun7i-a20.dtsi arch/arm/boot/dts/skeleton.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/arm-gic.h \
+ scripts/dtc/include-prefixes/dt-bindings/interrupt-controller/irq.h \
+ scripts/dtc/include-prefixes/dt-bindings/thermal/thermal.h \
+ scripts/dtc/include-prefixes/dt-bindings/clock/sun4i-a10-pll2.h \
+ scripts/dtc/include-prefixes/dt-bindings/dma/sun4i-a10.h \
+ arch/arm/boot/dts/sunxi-common-regulators.dtsi \
+ scripts/dtc/include-prefixes/dt-bindings/gpio/gpio.h \
+ arch/arm/boot/dts/axp209.dtsi

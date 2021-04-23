@@ -1,0 +1,1 @@
+cmd_drivers/usb/storage/ums-eneub6250.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/storage/ums-eneub6250.ko drivers/usb/storage/ums-eneub6250.o drivers/usb/storage/ums-eneub6250.mod.o ;  true

@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/zd1301_demod.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/zd1301_demod.ko drivers/media/dvb-frontends/zd1301_demod.o drivers/media/dvb-frontends/zd1301_demod.mod.o ;  true

@@ -1,0 +1,1 @@
+cmd_drivers/gpu/drm/bridge/synopsys/built-in.o :=  rm -f drivers/gpu/drm/bridge/synopsys/built-in.o; arm-linux-ar rcSTPD drivers/gpu/drm/bridge/synopsys/built-in.o drivers/gpu/drm/bridge/synopsys/dw-hdmi.o drivers/gpu/drm/bridge/synopsys/dw-hdmi-ahb-audio.o drivers/gpu/drm/bridge/synopsys/dw-hdmi-i2s-audio.o drivers/gpu/drm/bridge/synopsys/dw-hdmi-cec.o 

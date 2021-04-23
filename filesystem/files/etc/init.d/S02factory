@@ -1,0 +1,38 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		# Enter factory mode when '/boot/hw.conf' missing or '/boot/factory.mode' exists
+		ENTER_FACTORYMODE=0
+		if [ ! -f /boot/hw.conf ]; then
+			ENTER_FACTORYMODE=1
+		else
+			if [ -f /boot/factory.mode ]; then
+				ENTER_FACTORYMODE=1
+			fi
+		fi
+		if [ $ENTER_FACTORYMODE -eq 1 ]; then
+			if [ ! -f /app/facapps.done ]; then
+				echo "Prepare for factory mode ..."
+				rm -fr /app/* >/dev/null 2>&1
+				if [ -f /usr/share/rtmfs/factory.tar.gz ]; then
+					/bin/tar -xf /usr/share/rtmfs/factory.tar.gz -C /app/ >/dev/null 2>&1
+					echo "1" > /app/facapps.done
+					/bin/sync
+				else
+					echo "INIT_ERROR" > /sys/bus/i2c/devices/2-0030/syserr
+					echo "[ERROR] Failed to find factory mode programs"
+				fi
+			fi
+		fi
+		;;
+	stop)
+		;;
+	restart|reload)
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?

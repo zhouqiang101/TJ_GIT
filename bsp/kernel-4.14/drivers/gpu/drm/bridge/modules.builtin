@@ -1,0 +1,4 @@
+kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi.ko
+kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi-ahb-audio.ko
+kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi-i2s-audio.ko
+kernel/drivers/gpu/drm/bridge/synopsys/dw-hdmi-cec.ko

@@ -1,0 +1,18 @@
+/dev/ttyUSB6
+115200 
+nocrtscts 
+debug 
+nodetach 
+hide-password 
+usepeerdns 
+noauth 
+noipdefault 
+novj 
+novjccomp 
+noccp 
+defaultroute 
+ipcp-accept-local 
+ipcp-accept-remote
+connect '/usr/sbin/chat -s -v -f /etc/ppp/peers/lte-connect'
+disconnect '/usr/sbin/chat -s -v -f /etc/ppp/peers/lte-disconnect'
+

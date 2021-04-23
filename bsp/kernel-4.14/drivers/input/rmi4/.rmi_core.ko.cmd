@@ -1,0 +1,1 @@
+cmd_drivers/input/rmi4/rmi_core.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/input/rmi4/rmi_core.ko drivers/input/rmi4/rmi_core.o drivers/input/rmi4/rmi_core.mod.o ;  true

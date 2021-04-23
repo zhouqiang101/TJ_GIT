@@ -1,0 +1,36 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		# Enter user mode when '/boot/hw.conf' exists and '/boot/factory.mode' not exists
+		ENTER_USERMODE=0
+		if [ -f /boot/hw.conf ]; then
+			if [ ! -f /boot/factory.mode ]; then
+				ENTER_USERMODE=1
+			fi
+		fi
+		if [ $ENTER_USERMODE -eq 1 ]; then
+			if [ ! -f /app/userapps.done ]; then
+				echo "Prepare for rtm user mode ..."
+				rm -fr /app/* >/dev/null 2>&1
+				if [ -f /usr/share/rtmfs/userapp.tar.gz ]; then
+					/bin/tar -xf /usr/share/rtmfs/userapp.tar.gz -C /app/ >/dev/null 2>&1
+					echo "1" > /app/userapps.done
+					/bin/sync
+				else
+					echo "INIT_ERROR" > /sys/bus/i2c/devices/2-0030/syserr
+					echo "[ERROR] Failed to find user mode programs"
+				fi
+			fi
+		fi
+		;;
+	stop)
+		;;
+	restart|reload)
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?

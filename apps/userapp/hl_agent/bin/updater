@@ -1,0 +1,18 @@
+#!/bin/sh
+
+file_gz=$1
+
+cd /app/hl_agent
+if ! tar cvf /app/hl_agent_bak.tar --exclude=logs * --remove-files >/app/hl_agent/logs/hl_updater.log 2>&1; then
+	echo "backup_failed"
+	return 1
+fi
+
+if ! tar xf $file_gz -C /app/ >/app/hl_agent/logs/hl_updater.log 2>&1; then
+	echo "tar_xf_failed"
+    tar xf /app/hl_agent_bak.tar
+	exit 5
+fi
+
+echo "OK"
+exit 0

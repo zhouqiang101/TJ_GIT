@@ -1,0 +1,44 @@
+!<thin>
+//                                              392       `
+soc-core.o/
+soc-dapm.o/
+soc-jack.o/
+soc-cache.o/
+soc-utils.o/
+soc-pcm.o/
+soc-io.o/
+soc-devres.o/
+soc-ops.o/
+soc-generic-dmaengine-pcm.o/
+codecs/hdmi-codec.o/
+codecs/pcm5102a.o/
+codecs/spdif_receiver.o/
+codecs/spdif_transmitter.o/
+generic/simple-card-utils.o/
+generic/simple-card.o/
+sunxi/sun8i-codec-analog.o/
+sunxi/sun4i-codec.o/
+sunxi/sun4i-i2s.o/
+sunxi/sun4i-spdif.o/
+sunxi/sun8i-codec.o/
+/0              0           0     0     644     61584     `
+/12             0           0     0     644     53824     `
+/24             0           0     0     644     9988      `
+/36             0           0     0     644     1408      `
+/49             0           0     0     644     11244     `
+/62             0           0     0     644     35184     `
+/73             0           0     0     644     6212      `
+/83             0           0     0     644     3872      `
+/97             0           0     0     644     13168     `
+/108            0           0     0     644     6520      `
+/137            0           0     0     644     10184     `
+/158            0           0     0     644     3876      `
+/177            0           0     0     644     4348      `
+/202            0           0     0     644     4356      `
+/230            0           0     0     644     10912     `
+/259            0           0     0     644     9580      `
+/282            0           0     0     644     23772     `
+/310            0           0     0     644     39004     `
+/331            0           0     0     644     14192     `
+/350            0           0     0     644     8420      `
+/371            0           0     0     644     12324     `

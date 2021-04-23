@@ -1,0 +1,2 @@
+kernel/crypto/async_tx/async_tx.ko
+kernel/crypto/async_tx/async_xor.ko

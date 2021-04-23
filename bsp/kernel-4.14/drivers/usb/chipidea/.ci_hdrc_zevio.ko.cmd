@@ -1,0 +1,1 @@
+cmd_drivers/usb/chipidea/ci_hdrc_zevio.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/chipidea/ci_hdrc_zevio.ko drivers/usb/chipidea/ci_hdrc_zevio.o drivers/usb/chipidea/ci_hdrc_zevio.mod.o ;  true

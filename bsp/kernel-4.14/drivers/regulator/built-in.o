@@ -1,0 +1,20 @@
+!<thin>
+//                                              118       `
+core.o/
+dummy.o/
+fixed-helper.o/
+helpers.o/
+devres.o/
+of_regulator.o/
+fixed.o/
+gpio-regulator.o/
+sy8106a-regulator.o/
+/0              0           0     0     644     67508     `
+/8              0           0     0     644     3656      `
+/17             0           0     0     644     1804      `
+/33             0           0     0     644     9916      `
+/44             0           0     0     644     9116      `
+/54             0           0     0     644     7816      `
+/70             0           0     0     644     5324      `
+/79             0           0     0     644     8704      `
+/97             0           0     0     644     5300      `

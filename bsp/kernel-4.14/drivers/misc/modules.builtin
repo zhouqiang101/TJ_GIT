@@ -1,0 +1,3 @@
+kernel/drivers/misc/ad82586c.ko
+kernel/drivers/misc/audiobox_cfg.ko
+kernel/drivers/misc/es7242.ko

@@ -1,0 +1,11 @@
+!<thin>
+//                                              122       `
+../../../virt/kvm/kvm_main.o/
+../../../virt/kvm/coalesced_mmio.o/
+../../../virt/kvm/eventfd.o/
+../../../virt/kvm/vfio.o/
+
+/0              0           0     0     644     70776     `
+/30             0           0     0     644     3076      `
+/66             0           0     0     644     10344     `
+/95             0           0     0     644     4392      `

@@ -1,0 +1,51 @@
+#!/bin/sh
+
+echo "INIT: Proceed startup sequence"
+
+# Start all init scripts in /etc/init.d
+# executing them in numerical order.
+#
+echo "INIT: Begin system initialize"
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+for i in /etc/init.d/S??* ;do
+
+    # Ignore dangling symlinks (if any).
+    [ ! -f "$i" ] && continue
+
+    case "$i" in
+	*)
+	    $i start
+	    ;;
+    esac
+done
+
+# Skip application init when init failed
+/bin/cat /sys/bus/i2c/devices/2-0030/syserr | grep -i "INIT_ERROR" >/dev/null 2>&1
+if [ $? -ne 0 ]; then
+    # Start all init scripts in /app/etc/init.d
+    # executing them in numerical order.
+    #
+    echo "INIT: Begin application initialize"
+    export PATH=$PATH:/app/bin:/app/sbin
+    for i in /app/etc/init.d/S??* ;do
+
+	# Ignore dangling symlinks (if any).
+	[ ! -f "$i" ] && continue
+
+	case "$i" in
+	    *)
+		$i start
+		;;
+	esac
+    done
+fi
+
+# Reboot when init failed
+/bin/cat /sys/bus/i2c/devices/2-0030/syserr | grep -i "INIT_ERROR" >/dev/null 2>&1
+if [ $? -eq 0 ]; then
+    echo "INIT: Failed to continue, reboot after 5 secs"
+    /usr/bin/aplay /usr/share/voice_hints/syserror.wav >/dev/null 2>&1
+    /bin/delay_reboot 5
+else
+    echo "INIT: Succeed"
+fi

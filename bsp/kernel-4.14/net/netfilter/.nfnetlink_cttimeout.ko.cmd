@@ -1,0 +1,1 @@
+cmd_net/netfilter/nfnetlink_cttimeout.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o net/netfilter/nfnetlink_cttimeout.ko net/netfilter/nfnetlink_cttimeout.o net/netfilter/nfnetlink_cttimeout.mod.o ;  true

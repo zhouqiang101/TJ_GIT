@@ -1,0 +1,1 @@
+cmd_drivers/net/bonding/bonding.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/net/bonding/bonding.ko drivers/net/bonding/bonding.o drivers/net/bonding/bonding.mod.o ;  true

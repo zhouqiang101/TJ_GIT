@@ -1,0 +1,2 @@
+kernel/drivers/input/ff-memless.ko
+kernel/drivers/input/rmi4/rmi_core.ko

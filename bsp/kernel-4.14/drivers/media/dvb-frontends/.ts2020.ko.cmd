@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/ts2020.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/ts2020.ko drivers/media/dvb-frontends/ts2020.o drivers/media/dvb-frontends/ts2020.mod.o ;  true

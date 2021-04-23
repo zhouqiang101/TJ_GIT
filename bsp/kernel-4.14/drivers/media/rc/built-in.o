@@ -1,0 +1,31 @@
+!<thin>
+//                                              238       `
+rc-main.o/
+rc-ir-raw.o/
+lirc_dev.o/
+ir-nec-decoder.o/
+ir-rc5-decoder.o/
+ir-rc6-decoder.o/
+ir-jvc-decoder.o/
+ir-sony-decoder.o/
+ir-sanyo-decoder.o/
+ir-sharp-decoder.o/
+ir-mce_kbd-decoder.o/
+ir-lirc-codec.o/
+ir-xmp-decoder.o/
+sunxi-cir.o/
+
+/0              0           0     0     644     27944     `
+/11             0           0     0     644     12508     `
+/24             0           0     0     644     14008     `
+/36             0           0     0     644     5048      `
+/54             0           0     0     644     5556      `
+/72             0           0     0     644     6428      `
+/90             0           0     0     644     5040      `
+/108            0           0     0     644     4996      `
+/127            0           0     0     644     5280      `
+/147            0           0     0     644     5072      `
+/167            0           0     0     644     7992      `
+/189           /0           0     0     644     7688      `
+/206            0           0     0     644     5652      `
+/224            0           0     0     644     7804      `

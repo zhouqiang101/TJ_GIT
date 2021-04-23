@@ -1,0 +1,52 @@
+#! /bin/sh
+
+NAME=ntpd
+DAEMON=/usr/sbin/$NAME
+
+# Gracefully exit if the package has been removed.
+test -x $DAEMON || exit 0
+
+# Read config file if it is present.
+if [ -r /etc/default/$NAME ]
+then
+  . /etc/default/$NAME
+fi
+
+# Enter factory mode when '/boot/hw.conf' missing or '/boot/factory.mode' exists
+ENTER_FACTORYMODE=0
+if [ ! -f /boot/hw.conf ]; then
+    ENTER_FACTORYMODE=1
+else
+    if [ -f /boot/factory.mode ]; then
+        ENTER_FACTORYMODE=1
+    fi
+fi
+# Do not sync time in factory mode
+if [ $ENTER_FACTORYMODE -eq 1 ]; then
+    exit 0
+fi
+
+case "$1" in
+  start)
+    printf "Starting $NAME: "
+    start-stop-daemon -S -q -x $DAEMON -- -g
+    [ $? = 0 ] && echo "OK" || echo "FAIL"
+    ;;
+  stop)
+    printf "Stopping $NAME: "
+    start-stop-daemon -K -q -n $NAME
+    [ $? = 0 ] && echo "OK" || echo "FAIL"
+    ;;
+  restart|reload)
+    echo "Restarting $NAME: "
+    $0 stop
+    sleep 1
+    $0 start
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart|reload}" >&2
+    exit 1
+    ;;
+esac
+
+exit 0

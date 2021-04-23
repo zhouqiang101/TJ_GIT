@@ -1,0 +1,8 @@
+TIMEOUT 10
+ABORT "ERROR"
+ABORT "NO DIALTONE"
+ABORT "NO CARRIER"
+SAY "\nSending break to the modem\n"
+""\k"
+""+++ATH"
+SAY "\nGood bye\n"

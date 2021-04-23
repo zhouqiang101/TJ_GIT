@@ -1,0 +1,1 @@
+cmd_drivers/ata/built-in.o :=  rm -f drivers/ata/built-in.o; arm-linux-ar rcSTPD drivers/ata/built-in.o drivers/ata/libata.o drivers/ata/ahci_sunxi.o drivers/ata/libahci.o drivers/ata/libahci_platform.o 

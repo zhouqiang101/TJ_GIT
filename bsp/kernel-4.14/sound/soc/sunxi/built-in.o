@@ -1,0 +1,12 @@
+!<thin>
+//                                              80        `
+sun8i-codec-analog.o/
+sun4i-codec.o/
+sun4i-i2s.o/
+sun4i-spdif.o/
+sun8i-codec.o/
+/0              0           0     0     644     23772     `
+/22             0           0     0     644     39004     `
+/37             0           0     0     644     14192     `
+/50             0           0     0     644     8420      `
+/65             0           0     0     644     12324     `

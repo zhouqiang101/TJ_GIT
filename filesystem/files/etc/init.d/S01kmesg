@@ -1,0 +1,18 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		printf "Disable kernel messages: "
+		echo 4 > /proc/sys/kernel/printk
+		echo "OK"
+		;;
+	stop)
+		;;
+	restart|reload)
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?

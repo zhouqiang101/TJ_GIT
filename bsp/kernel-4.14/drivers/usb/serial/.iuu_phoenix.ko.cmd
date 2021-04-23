@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/iuu_phoenix.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/serial/iuu_phoenix.ko drivers/usb/serial/iuu_phoenix.o drivers/usb/serial/iuu_phoenix.mod.o ;  true

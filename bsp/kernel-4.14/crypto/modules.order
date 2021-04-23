@@ -1,0 +1,5 @@
+kernel/crypto/echainiv.ko
+kernel/crypto/deflate.ko
+kernel/crypto/authenc.ko
+kernel/crypto/authencesn.ko
+kernel/crypto/ecdh_generic.ko

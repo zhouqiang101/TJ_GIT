@@ -1,0 +1,1 @@
+cmd_drivers/media/rc/serial_ir.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/rc/serial_ir.ko drivers/media/rc/serial_ir.o drivers/media/rc/serial_ir.mod.o ;  true

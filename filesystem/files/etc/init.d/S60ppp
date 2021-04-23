@@ -1,0 +1,23 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		printf "Make ppp device node: "
+		/bin/touch /tmp/lte_resolv.conf
+		if [ -e /dev/ppp ]; then
+			echo "EXIST"
+		else
+			/bin/mknod /dev/ppp c 108 0
+			echo "OK"
+		fi
+		;;
+	stop)
+		;;
+	restart|reload)
+		;;
+	*)
+		echo "Usage: $0 {start|stop|restart}"
+		exit 1
+esac
+
+exit $?

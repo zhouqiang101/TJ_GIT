@@ -1,0 +1,35 @@
+#!/bin/sh
+
+echo "INIT: Proceed shutdown sequence"
+
+# Stop all init scripts in /app/etc/init.d
+# executing them in reversed numerical order.
+#
+SCRIPTS=`ls -r /app/etc/init.d/S??* 2>/dev/null`
+for i in $SCRIPTS ;do
+
+    # Ignore dangling symlinks (if any).
+    [ ! -f "$i" ] && continue
+
+    case "$i" in
+	*)
+	    $i stop
+	    ;;
+    esac
+done
+
+# Stop all init scripts in /etc/init.d
+# executing them in reversed numerical order.
+#
+SCRIPTS=`ls -r /etc/init.d/S??* 2>/dev/null`
+for i in $SCRIPTS ;do
+
+    # Ignore dangling symlinks (if any).
+    [ ! -f "$i" ] && continue
+
+    case "$i" in
+	*)
+	    $i stop
+	    ;;
+    esac
+done

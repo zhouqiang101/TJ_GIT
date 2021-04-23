@@ -1,0 +1,1 @@
+cmd_drivers/rtc/rtc-hid-sensor-time.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/rtc/rtc-hid-sensor-time.ko drivers/rtc/rtc-hid-sensor-time.o drivers/rtc/rtc-hid-sensor-time.mod.o ;  true

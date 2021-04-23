@@ -1,0 +1,11 @@
+!<thin>
+//                                              66        `
+hdmi-codec.o/
+pcm5102a.o/
+spdif_receiver.o/
+spdif_transmitter.o/
+
+/0              0           0     0     644     10184     `
+/14             0           0     0     644     3876      `
+/26             0           0     0     644     4348      `
+/44             0           0     0     644     4356      `

@@ -1,0 +1,1 @@
+cmd_drivers/hid/hid-sensor-hub.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/hid/hid-sensor-hub.ko drivers/hid/hid-sensor-hub.o drivers/hid/hid-sensor-hub.mod.o ;  true

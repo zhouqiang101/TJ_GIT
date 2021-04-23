@@ -1,0 +1,37 @@
+1. http.lua line128: close timeout socket
+2. copas.lua line24: local WATCH_DOG_TIMEOUT = 10
+
+diff libs/copas.lua /usr/local/share/lua/5.3/copas.lua
+24c24
+< local WATCH_DOG_TIMEOUT = 10
+---
+> local WATCH_DOG_TIMEOUT = 120
+187d186
+< local _closed_skts = {}
+335,339d333
+< 	if err == "timeout" and _closed_skts[skt] then
+< 		err = "closed"
+< 		_closed_skts[skt] = nil
+< 		--print(string.format("copas.connect skt(%s) set err to closed",tostring(skt)))
+< 	end
+435,438c429
+<                    close = function(self, ...) 
+< 						_closed_skts[self.socket] = true
+< 						return self.socket:close(...) 
+< 				   end,
+---
+>                    close = function(self, ...) return self.socket:close(...) end,
+774d764
+<   --print(string.format("_reading #%d, _writing #%d",#_reading, #_writing));
+dgj@ubuntu:~/hl_audio_agent$ diff libs/copas/http.lua /usr/local/share/lua/5.3/copas/http.lua 
+128,133d127
+< 	copas.addthread(function(skt)
+< 		copas.sleep(5)
+< 		skt:close()	
+< 		skt:shutdown()	
+< 		print(string.format("close timeout socket:%s", tostring(skt)))
+< 	end, c)
+396c390
+<             ["content-type"] = "application/json; charset=UTF-8"
+---
+>             ["content-type"] = "application/x-www-form-urlencoded"

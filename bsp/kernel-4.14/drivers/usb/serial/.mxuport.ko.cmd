@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/mxuport.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/serial/mxuport.ko drivers/usb/serial/mxuport.o drivers/usb/serial/mxuport.mod.o ;  true

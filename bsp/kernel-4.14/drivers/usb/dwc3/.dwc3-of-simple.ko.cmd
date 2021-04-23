@@ -1,0 +1,1 @@
+cmd_drivers/usb/dwc3/dwc3-of-simple.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/dwc3/dwc3-of-simple.ko drivers/usb/dwc3/dwc3-of-simple.o drivers/usb/dwc3/dwc3-of-simple.mod.o ;  true

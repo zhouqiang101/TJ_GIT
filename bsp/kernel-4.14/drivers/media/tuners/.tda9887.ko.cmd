@@ -1,0 +1,1 @@
+cmd_drivers/media/tuners/tda9887.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/tuners/tda9887.ko drivers/media/tuners/tda9887.o drivers/media/tuners/tda9887.mod.o ;  true

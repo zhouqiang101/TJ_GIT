@@ -1,0 +1,12 @@
+!<thin>
+//                                              130       `
+reset/gpio-poweroff.o/
+reset/gpio-restart.o/
+supply/power_supply_core.o/
+supply/power_supply_sysfs.o/
+supply/power_supply_leds.o/
+/0             /0           0     0     644     4868      `
+/23             0           0     0     644     5440      `
+/45             0           0     0     644     22076     `
+/73             0           0     0     644     10308     `
+/102            0           0     0     644     2892      `

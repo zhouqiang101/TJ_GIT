@@ -1,0 +1,1 @@
+cmd_net/ipv4/xfrm4_mode_transport.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o net/ipv4/xfrm4_mode_transport.ko net/ipv4/xfrm4_mode_transport.o net/ipv4/xfrm4_mode_transport.mod.o ;  true

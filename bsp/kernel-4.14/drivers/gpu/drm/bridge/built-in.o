@@ -1,0 +1,10 @@
+!<thin>
+//                                              104       `
+synopsys/dw-hdmi.o/
+synopsys/dw-hdmi-ahb-audio.o/
+synopsys/dw-hdmi-i2s-audio.o/
+synopsys/dw-hdmi-cec.o/
+/0              0           0     0     644     29960     `
+/20             0           0     0     644     7736      `
+/50             0           0     0     644     4064      `
+/80             0           0     0     644     5632      `

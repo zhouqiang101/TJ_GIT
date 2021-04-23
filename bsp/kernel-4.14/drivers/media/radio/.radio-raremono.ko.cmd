@@ -1,0 +1,1 @@
+cmd_drivers/media/radio/radio-raremono.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/radio/radio-raremono.ko drivers/media/radio/radio-raremono.o drivers/media/radio/radio-raremono.mod.o ;  true

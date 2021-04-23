@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/gspca/gspca_touptek.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/usb/gspca/gspca_touptek.ko drivers/media/usb/gspca/gspca_touptek.o drivers/media/usb/gspca/gspca_touptek.mod.o ;  true

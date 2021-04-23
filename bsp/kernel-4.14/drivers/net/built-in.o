@@ -1,0 +1,85 @@
+!<thin>
+//                                              1164      `
+mii.o/
+Space.o/
+loopback.o/
+phy/mdio-boardinfo.o/
+phy/phy.o/
+phy/phy-c45.o/
+phy/phy-core.o/
+phy/phy_device.o/
+phy/mdio_bus.o/
+phy/mdio_device.o/
+phy/swphy.o/
+phy/phy_led_triggers.o/
+phy/fixed_phy.o/
+tun.o/
+veth.o/
+can/dev.o/
+can/rx-offload.o/
+can/sun4i_can.o/
+ethernet/stmicro/stmmac/stmmac_main.o/
+ethernet/stmicro/stmmac/stmmac_ethtool.o/
+ethernet/stmicro/stmmac/stmmac_mdio.o/
+ethernet/stmicro/stmmac/ring_mode.o/
+ethernet/stmicro/stmmac/chain_mode.o/
+ethernet/stmicro/stmmac/dwmac_lib.o/
+ethernet/stmicro/stmmac/dwmac1000_core.o/
+ethernet/stmicro/stmmac/dwmac1000_dma.o/
+ethernet/stmicro/stmmac/dwmac100_core.o/
+ethernet/stmicro/stmmac/dwmac100_dma.o/
+ethernet/stmicro/stmmac/enh_desc.o/
+ethernet/stmicro/stmmac/norm_desc.o/
+ethernet/stmicro/stmmac/mmc_core.o/
+ethernet/stmicro/stmmac/stmmac_hwtstamp.o/
+ethernet/stmicro/stmmac/stmmac_ptp.o/
+ethernet/stmicro/stmmac/dwmac4_descs.o/
+ethernet/stmicro/stmmac/dwmac4_dma.o/
+ethernet/stmicro/stmmac/dwmac4_lib.o/
+ethernet/stmicro/stmmac/dwmac4_core.o/
+ethernet/stmicro/stmmac/stmmac_platform.o/
+ethernet/stmicro/stmmac/dwmac-sunxi.o/
+ethernet/stmicro/stmmac/dwmac-sun8i.o/
+ethernet/stmicro/stmmac/dwmac-generic.o/
+
+/0              0           0     0     644     8692      `
+/7              0           0     0     644     2012      `
+/16             0           0     0     644     4888      `
+/28             0           0     0     644     2688      `
+/50             0           0     0     644     17340     `
+/61             0           0     0     644     5260      `
+/76             0           0     0     644     5344      `
+/92             0           0     0     644     30388     `
+/110            0           0     0     644     13928     `
+/126            0           0     0     644     4652      `
+/145            0           0     0     644     2844      `
+/158            0           0     0     644     3624      `
+/182            0           0     0     644     7728      `
+/199            0           0     0     644     35752     `
+/206            0           0     0     644     8700      `
+/214            0           0     0     644     18816     `
+/225            0           0     0     644     6240      `
+/243            0           0     0     644     10764     `
+/260            0           0     0     644     51640     `
+/299            0           0     0     644     15616     `
+/341            0           0     0     644     4860      `
+/380            0           0     0     644     3152      `
+/417            0           0     0     644     3164      `
+/455            0           0     0     644     3964      `
+/492            0           0     0     644     6004      `
+/534           /0           0     0     644     3412      `
+/575           /0           0     0     644     3280      `
+/616            0           0     0     644     2484      `
+/656            0           0     0     644     5240      `
+/692            0           0     0     644     4464      `
+/729            0           0     0     644     2952      `
+/765            0           0     0     644     2496      `
+/808            0           0     0     644     3208      `
+/846            0           0     0     644     4828      `
+/886            0           0     0     644     5076      `
+/924            0           0     0     644     3300      `
+/962            0           0     0     644     8192      `
+/1001           0           0     0     644     14756     `
+/1044           0           0     0     644     5368      `
+/1083           0           0     0     644     14172     `
+/1122          /0           0     0     644     5400      `

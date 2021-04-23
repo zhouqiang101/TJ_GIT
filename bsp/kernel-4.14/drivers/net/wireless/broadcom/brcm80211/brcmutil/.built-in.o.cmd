@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/broadcom/brcm80211/brcmutil/built-in.o :=  rm -f drivers/net/wireless/broadcom/brcm80211/brcmutil/built-in.o; arm-linux-ar rcSTPD drivers/net/wireless/broadcom/brcm80211/brcmutil/built-in.o

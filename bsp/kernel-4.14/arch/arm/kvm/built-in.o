@@ -1,0 +1,90 @@
+!<thin>
+//                                              1164      `
+../../../virt/kvm/arm/hyp/vgic-v2-sr.o/
+../../../virt/kvm/arm/hyp/vgic-v3-sr.o/
+../../../virt/kvm/arm/hyp/timer-sr.o/
+hyp/tlb.o/
+hyp/cp15-sr.o/
+hyp/vfp.o/
+hyp/banked-sr.o/
+hyp/entry.o/
+hyp/hyp-entry.o/
+hyp/switch.o/
+hyp/s2-setup.o/
+../../../virt/kvm/kvm_main.o/
+../../../virt/kvm/coalesced_mmio.o/
+../../../virt/kvm/eventfd.o/
+../../../virt/kvm/vfio.o/
+init.o/
+interrupts.o/
+handle_exit.o/
+guest.o/
+emulate.o/
+reset.o/
+coproc.o/
+coproc_a15.o/
+coproc_a7.o/
+vgic-v3-coproc.o/
+../../../virt/kvm/arm/arm.o/
+../../../virt/kvm/arm/mmu.o/
+../../../virt/kvm/arm/mmio.o/
+../../../virt/kvm/arm/psci.o/
+../../../virt/kvm/arm/perf.o/
+../../../virt/kvm/arm/aarch32.o/
+../../../virt/kvm/arm/vgic/vgic.o/
+../../../virt/kvm/arm/vgic/vgic-init.o/
+../../../virt/kvm/arm/vgic/vgic-irqfd.o/
+../../../virt/kvm/arm/vgic/vgic-v2.o/
+../../../virt/kvm/arm/vgic/vgic-v3.o/
+../../../virt/kvm/arm/vgic/vgic-mmio.o/
+../../../virt/kvm/arm/vgic/vgic-mmio-v2.o/
+../../../virt/kvm/arm/vgic/vgic-mmio-v3.o/
+../../../virt/kvm/arm/vgic/vgic-kvm-device.o/
+../../../virt/kvm/arm/vgic/vgic-its.o/
+../../../virt/kvm/arm/vgic/vgic-debug.o/
+../../../virt/kvm/irqchip.o/
+../../../virt/kvm/arm/arch_timer.o/
+/0              0           0     0     644     1620      `
+/40             0           0     0     644     3916      `
+/80             0           0     0     644     1332      `
+/118            0           0     0     644     1472      `
+/129            0           0     0     644     1628      `
+/144            0           0     0     644     840       `
+/155            0           0     0     644     1584      `
+/172            0           0     0     644     1108      `
+/185            0           0     0     644     1720      `
+/202            0           0     0     644     3488      `
+/216            0           0     0     644     1184      `
+/232            0           0     0     644     70776     `
+/262            0           0     0     644     3076      `
+/298            0           0     0     644     10344     `
+/327            0           0     0     644     4392      `
+/353            0           0     0     644     1216      `
+/361            0           0     0     644     608       `
+/375            0           0     0     644     4308      `
+/390            0           0     0     644     5308      `
+/399            0           0     0     644     3272      `
+/410            0           0     0     644     1548      `
+/419            0           0     0     644     19624     `
+/429            0           0     0     644     2472      `
+/443            0           0     0     644     2468      `
+/456            0           0     0     644     1164      `
+/474            0           0     0     644     21548     `
+/503            0           0     0     644     22256     `
+/532            0           0     0     644     3168      `
+/562            0           0     0     644     4292      `
+/592            0           0     0     644     1776      `
+/622            0           0     0     644     1664      `
+/655            0           0     0     644     8108      `
+/690            0           0     0     644     6460      `
+/730            0           0     0     644     2040      `
+/771            0           0     0     644     6300      `
+/809            0           0     0     644     9036      `
+/847            0           0     0     644     9000      `
+/887            0           0     0     644     7304      `
+/930            0           0     0     644     12284     `
+/973            0           0     0     644     7776      `
+/1019           0           0     0     644     21120     `
+/1058           0           0     0     644     4964      `
+/1099           0           0     0     644     3288      `
+/1128           0           0     0     644     9640      `

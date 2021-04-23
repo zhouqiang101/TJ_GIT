@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/stv0900.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/stv0900.ko drivers/media/dvb-frontends/stv0900.o drivers/media/dvb-frontends/stv0900.mod.o ;  true

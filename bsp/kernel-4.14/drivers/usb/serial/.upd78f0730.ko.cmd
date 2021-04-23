@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/upd78f0730.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/serial/upd78f0730.ko drivers/usb/serial/upd78f0730.o drivers/usb/serial/upd78f0730.mod.o ;  true

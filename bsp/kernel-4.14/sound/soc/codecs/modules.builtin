@@ -1,0 +1,4 @@
+kernel/sound/soc/codecs/snd-soc-hdmi-codec.ko
+kernel/sound/soc/codecs/snd-soc-pcm5102a.ko
+kernel/sound/soc/codecs/snd-soc-spdif-rx.ko
+kernel/sound/soc/codecs/snd-soc-spdif-tx.ko

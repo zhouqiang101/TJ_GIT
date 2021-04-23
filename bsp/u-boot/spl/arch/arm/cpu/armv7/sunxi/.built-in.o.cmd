@@ -1,0 +1,1 @@
+cmd_spl/arch/arm/cpu/armv7/sunxi/built-in.o :=  arm-linux-ld.bfd     -r -o spl/arch/arm/cpu/armv7/sunxi/built-in.o spl/arch/arm/cpu/armv7/sunxi/timer.o spl/arch/arm/cpu/armv7/sunxi/tzpc.o spl/arch/arm/cpu/armv7/sunxi/fel_utils.o 

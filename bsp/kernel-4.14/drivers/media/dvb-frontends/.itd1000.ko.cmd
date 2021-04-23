@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/itd1000.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/itd1000.ko drivers/media/dvb-frontends/itd1000.o drivers/media/dvb-frontends/itd1000.mod.o ;  true

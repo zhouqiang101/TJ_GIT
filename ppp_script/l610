@@ -1,0 +1,23 @@
+hide-password
+noauth
+/dev/ttyUSB5
+115200
+defaultroute
+usepeerdns
+noipdefault
+novj
+novjccomp
+noccp
+ipcp-accept-local
+ipcp-accept-remote
+local
+lock
+dump
+nodetach
+user
+password
+crtscts
+#remotename 3gppp
+#ipparam 3gppp
+connect '/usr/sbin/chat -s -v -f /etc/ppp/peers/lte-connect'
+disconnect '/usr/sbin/chat -s -v -f /etc/ppp/peers/lte-disconnect'

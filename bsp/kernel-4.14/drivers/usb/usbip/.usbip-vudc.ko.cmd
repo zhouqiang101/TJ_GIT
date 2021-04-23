@@ -1,0 +1,1 @@
+cmd_drivers/usb/usbip/usbip-vudc.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/usbip/usbip-vudc.ko drivers/usb/usbip/usbip-vudc.o drivers/usb/usbip/usbip-vudc.mod.o ;  true

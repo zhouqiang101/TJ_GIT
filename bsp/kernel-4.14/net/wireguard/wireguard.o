@@ -1,0 +1,40 @@
+!<thin>
+//                                              274       `
+main.o/
+noise.o/
+device.o/
+peer.o/
+timers.o/
+queueing.o/
+send.o/
+receive.o/
+socket.o/
+hashtables.o/
+allowedips.o/
+ratelimiter.o/
+cookie.o/
+netlink.o/
+crypto/curve25519.o/
+crypto/chacha20poly1305.o/
+crypto/blake2s.o/
+crypto/chacha20-neon-arm.o/
+crypto/curve25519-neon-arm.o/
+/0              0           0     0     644     3124      `
+/8              0           0     0     644     14116     `
+/17             0           0     0     644     9496      `
+/27             0           0     0     644     4704      `
+/35             0           0     0     644     4592      `
+/45             0           0     0     644     2576      `
+/57             0           0     0     644     8752      `
+/65             0           0     0     644     10944     `
+/76             0           0     0     644     9104      `
+/86             0           0     0     644     3600      `
+/100            0           0     0     644     7676      `
+/114            0           0     0     644     5880      `
+/129            0           0     0     644     5236      `
+/139            0           0     0     644     10604     `
+/150            0           0     0     644     19344     `
+/171            0           0     0     644     20516     `
+/198            0           0     0     644     31356     `
+/216            0           0     0     644     1992      `
+/244            0           0     0     644     8956      `

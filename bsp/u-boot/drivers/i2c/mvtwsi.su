@@ -1,0 +1,9 @@
+mvtwsi.c:262:12:twsi_wait	24	static
+mvtwsi.c:522:12:i2c_begin	24	static
+mvtwsi.c:378:12:twsi_stop	24	static
+mvtwsi.c:760:12:mvtwsi_i2c_probe_chip	16	static
+mvtwsi.c:444:13:__twsi_i2c_set_bus_speed	40	static
+mvtwsi.c:767:12:mvtwsi_i2c_set_bus_speed	16	static
+mvtwsi.c:795:12:mvtwsi_i2c_probe	24	static
+mvtwsi.c:777:12:mvtwsi_i2c_ofdata_to_platdata	16	static
+mvtwsi.c:806:12:mvtwsi_i2c_xfer	56	static

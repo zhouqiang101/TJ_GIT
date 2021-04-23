@@ -1,0 +1,31 @@
+!<thin>
+//                                              210       `
+gc.o/
+key.o/
+keyring.o/
+keyctl.o/
+permission.o/
+process_keys.o/
+request_key.o/
+request_key_auth.o/
+user_defined.o/
+proc.o/
+sysctl.o/
+persistent.o/
+encrypted-keys/encrypted.o/
+encrypted-keys/ecryptfs_format.o/
+
+/0              0           0     0     644     5860      `
+/6              0           0     0     644     15552     `
+/13             0           0     0     644     14904     `
+/24             0           0     0     644     14604     `
+/34             0           0     0     644     2084      `
+/48             0           0     0     644     9440      `
+/64             0           0     0     644     10156     `
+/79             0           0     0     644     4472      `
+/99             0           0     0     644     5336      `
+/115            0           0     0     644     7004      `
+/123            0           0     0     644     1936      `
+/133            0           0     0     644     2724      `
+/147            0           0     0     644     15776     `
+/175            0           0     0     644     2340      `
