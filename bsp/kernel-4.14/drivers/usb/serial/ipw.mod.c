@@ -24,6 +24,6 @@ MODULE_INFO(retpoline, "Y");
 static const char __module_depends[]
 __used
 __attribute__((section(".modinfo"))) =
-"depends=usb_wwan";
+"depends=";
 
 MODULE_ALIAS("usb:v0BC3p0001d*dc*dsc*dp*ic*isc*ip*in*");

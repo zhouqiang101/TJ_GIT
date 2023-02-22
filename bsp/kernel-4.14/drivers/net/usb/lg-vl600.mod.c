@@ -24,6 +24,6 @@ MODULE_INFO(retpoline, "Y");
 static const char __module_depends[]
 __used
 __attribute__((section(".modinfo"))) =
-"depends=usbnet,cdc_ether";
+"depends=";
 
 MODULE_ALIAS("usb:v1004p61AAd*dc*dsc*dp*ic02isc06ip00in*");

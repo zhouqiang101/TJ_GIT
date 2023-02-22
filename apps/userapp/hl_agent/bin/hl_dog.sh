@@ -53,6 +53,13 @@ while /bin/true; do
     #reboot
     echo "done"
   fi
- 
-  sleep 6
+  sleep 3
+
+  if ! ps -ef |grep hl_ltedog |grep -v grep >/dev/null; then
+    echo "hl_ltedog no response, restart it ... "
+    killall -9 hl_ltedog
+    sleep 1
+    /app/hl_agent/bin/lte_create.sh &
+  fi 
+  sleep 3
 done

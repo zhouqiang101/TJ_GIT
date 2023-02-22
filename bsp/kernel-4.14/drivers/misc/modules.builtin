@@ -1,3 +1,2 @@
-kernel/drivers/misc/ad82586c.ko
-kernel/drivers/misc/audiobox_cfg.ko
-kernel/drivers/misc/es7242.ko
+kernel/drivers/misc/audiobox_device_h3.ko
+kernel/drivers/misc/audiobox_device_tm1680.ko

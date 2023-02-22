@@ -1,4 +1,4 @@
-/dev/ttyUSB6
+/dev/ttyUSB0
 115200 
 nocrtscts 
 debug 

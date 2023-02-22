@@ -127,33 +127,26 @@ kernel/drivers/net/usb/pegasus.ko:
 kernel/drivers/net/usb/rtl8150.ko:
 kernel/drivers/net/usb/r8152.ko:
 kernel/drivers/net/usb/lan78xx.ko:
-kernel/drivers/net/usb/asix.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/ax88179_178a.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/cdc_ether.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/cdc_eem.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/dm9601.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/sr9700.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/sr9800.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/smsc75xx.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/smsc95xx.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/gl620a.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/net1080.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/plusb.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/cdc_subset.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/zaurus.ko: kernel/drivers/net/usb/cdc_ether.ko kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/mcs7830.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/usbnet.ko:
-kernel/drivers/net/usb/int51x1.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/kalmia.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/asix.ko:
+kernel/drivers/net/usb/ax88179_178a.ko:
+kernel/drivers/net/usb/dm9601.ko:
+kernel/drivers/net/usb/sr9700.ko:
+kernel/drivers/net/usb/sr9800.ko:
+kernel/drivers/net/usb/smsc75xx.ko:
+kernel/drivers/net/usb/smsc95xx.ko:
+kernel/drivers/net/usb/gl620a.ko:
+kernel/drivers/net/usb/net1080.ko:
+kernel/drivers/net/usb/plusb.ko:
+kernel/drivers/net/usb/zaurus.ko:
+kernel/drivers/net/usb/mcs7830.ko:
+kernel/drivers/net/usb/int51x1.ko:
+kernel/drivers/net/usb/cdc-phonet.ko: kernel/net/phonet/phonet.ko
+kernel/drivers/net/usb/kalmia.ko:
 kernel/drivers/net/usb/ipheth.ko:
-kernel/drivers/net/usb/sierra_net.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/cx82310_eth.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/cdc_ncm.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/huawei_cdc_ncm.ko: kernel/drivers/net/usb/cdc_ncm.ko kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/lg-vl600.ko: kernel/drivers/net/usb/cdc_ether.ko kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/qmi_wwan.ko: kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/cdc_mbim.ko: kernel/drivers/net/usb/cdc_ncm.ko kernel/drivers/net/usb/usbnet.ko
-kernel/drivers/net/usb/ch9200.ko: kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/cx82310_eth.ko:
+kernel/drivers/net/usb/huawei_cdc_ncm.ko:
+kernel/drivers/net/usb/lg-vl600.ko:
+kernel/drivers/net/usb/ch9200.ko:
 kernel/drivers/net/bonding/bonding.ko:
 kernel/drivers/net/appletalk/ipddp.ko: kernel/net/appletalk/appletalk.ko kernel/net/802/psnap.ko kernel/net/llc/llc.ko
 kernel/drivers/net/ppp/ppp_generic.ko: kernel/drivers/net/slip/slhc.ko
@@ -200,7 +193,7 @@ kernel/drivers/usb/serial/f81534.ko:
 kernel/drivers/usb/serial/ftdi_sio.ko:
 kernel/drivers/usb/serial/garmin_gps.ko:
 kernel/drivers/usb/serial/ipaq.ko:
-kernel/drivers/usb/serial/ipw.ko: kernel/drivers/usb/serial/usb_wwan.ko
+kernel/drivers/usb/serial/ipw.ko:
 kernel/drivers/usb/serial/ir-usb.ko:
 kernel/drivers/usb/serial/iuu_phoenix.ko:
 kernel/drivers/usb/serial/keyspan.ko: kernel/drivers/usb/misc/ezusb.ko
@@ -215,19 +208,14 @@ kernel/drivers/usb/serial/mxuport.ko:
 kernel/drivers/usb/serial/navman.ko:
 kernel/drivers/usb/serial/omninet.ko:
 kernel/drivers/usb/serial/opticon.ko:
-kernel/drivers/usb/serial/option.ko: kernel/drivers/usb/serial/usb_wwan.ko
 kernel/drivers/usb/serial/oti6858.ko:
 kernel/drivers/usb/serial/pl2303.ko:
-kernel/drivers/usb/serial/qcaux.ko:
-kernel/drivers/usb/serial/qcserial.ko: kernel/drivers/usb/serial/usb_wwan.ko
 kernel/drivers/usb/serial/quatech2.ko:
 kernel/drivers/usb/serial/safe_serial.ko:
 kernel/drivers/usb/serial/sierra.ko:
-kernel/drivers/usb/serial/usb-serial-simple.ko:
 kernel/drivers/usb/serial/spcp8x5.ko:
 kernel/drivers/usb/serial/ssu100.ko:
 kernel/drivers/usb/serial/symbolserial.ko:
-kernel/drivers/usb/serial/usb_wwan.ko:
 kernel/drivers/usb/serial/ti_usb_3410_5052.ko:
 kernel/drivers/usb/serial/upd78f0730.ko:
 kernel/drivers/usb/serial/visor.ko:

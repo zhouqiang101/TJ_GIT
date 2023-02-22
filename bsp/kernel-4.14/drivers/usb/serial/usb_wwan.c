@@ -505,16 +505,24 @@ static struct urb *usb_wwan_setup_urb(struct usb_serial_port *port,
 	// Zero packet on some platform
 	if (dir == USB_DIR_OUT) {
 		struct usb_device_descriptor *desc = &serial->dev->descriptor;
-        //ZQ
-        if (desc->idVendor == cpu_to_le16(0x1782) && desc->idProduct == cpu_to_le16(0x4D10))
-            urb->transfer_flags |= URB_ZERO_PACKET;
-        if (desc->idVendor == cpu_to_le16(0x1782) && desc->idProduct == cpu_to_le16(0x4D11))
-            urb->transfer_flags |= URB_ZERO_PACKET;
 
-		if ((desc->idVendor == cpu_to_le16(0x1286)) &&
-		    (desc->idProduct == cpu_to_le16(0x4e3d))) {
+		//ZQ
+		if (desc->idVendor == cpu_to_le16(0x1782) && desc->idProduct == cpu_to_le16(0x4D10))
 			urb->transfer_flags |= URB_ZERO_PACKET;
-		}
+		if (desc->idVendor == cpu_to_le16(0x1782) && desc->idProduct == cpu_to_le16(0x4D11))
+			urb->transfer_flags |= URB_ZERO_PACKET;
+		if (desc->idVendor == cpu_to_le16(0x1286) && desc->idProduct == cpu_to_le16(0x4e3d))
+			urb->transfer_flags |= URB_ZERO_PACKET;
+
+		//WYF
+		if (desc->idVendor == cpu_to_le16(0x05C6) && desc->idProduct == cpu_to_le16(0x9090))
+			urb->transfer_flags |= URB_ZERO_PACKET;
+		if (desc->idVendor == cpu_to_le16(0x05C6) && desc->idProduct == cpu_to_le16(0x9003))
+			urb->transfer_flags |= URB_ZERO_PACKET;
+		if (desc->idVendor == cpu_to_le16(0x05C6) && desc->idProduct == cpu_to_le16(0x9215))
+			urb->transfer_flags |= URB_ZERO_PACKET;
+		if (desc->idVendor == cpu_to_le16(0x2C7C))
+			urb->transfer_flags |= URB_ZERO_PACKET;
 	}
 
 	return urb;

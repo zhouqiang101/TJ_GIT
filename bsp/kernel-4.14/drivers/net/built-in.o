@@ -1,5 +1,5 @@
 !<thin>
-//                                              1164      `
+//                                              1322      `
 mii.o/
 Space.o/
 loopback.o/
@@ -41,6 +41,16 @@ ethernet/stmicro/stmmac/stmmac_platform.o/
 ethernet/stmicro/stmmac/dwmac-sunxi.o/
 ethernet/stmicro/stmmac/dwmac-sun8i.o/
 ethernet/stmicro/stmmac/dwmac-generic.o/
+usb/hso.o/
+usb/cdc_ether.o/
+usb/cdc_eem.o/
+usb/rndis_host.o/
+usb/cdc_subset.o/
+usb/usbnet.o/
+usb/sierra_net.o/
+usb/cdc_ncm.o/
+usb/qmi_wwan.o/
+usb/cdc_mbim.o/
 
 /0              0           0     0     644     8692      `
 /7              0           0     0     644     2012      `
@@ -83,3 +93,13 @@ ethernet/stmicro/stmmac/dwmac-generic.o/
 /1044           0           0     0     644     5368      `
 /1083           0           0     0     644     14172     `
 /1122          /0           0     0     644     5400      `
+/1163           0           0     0     644     42708     `
+/1174           0           0     0     644     9964      `
+/1191           0           0     0     644     5632      `
+/1206           0           0     0     644     10712     `
+/1224           0           0     0     644     5068      `
+/1242           0           0     0     644     36184     `
+/1256           0           0     0     644     13772     `
+/1274           0           0     0     644     25972     `
+/1289           0           0     0     644     24088     `
+/1305           0           0     0     644     9320      `

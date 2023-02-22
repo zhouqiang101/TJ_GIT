@@ -23,6 +23,7 @@ backup_ssh_keys() {
 		/bin/sync
 	fi
 }
+
 restore_ssh_keys() {
 	if [ -f /app/usr/share/ssh_keys/has_keys ]; then
 		/bin/cp /app/usr/share/ssh_keys/ssh_host_rsa_key /etc/ssh/ >/dev/null 2>&1
@@ -35,6 +36,7 @@ restore_ssh_keys() {
 		/bin/cp /app/usr/share/ssh_keys/ssh_host_ed25519_key.pub /etc/ssh/ >/dev/null 2>&1
 	fi
 }
+
 start() {
 	# Restore backup keys
 	restore_ssh_keys
@@ -50,12 +52,14 @@ start() {
 	touch /var/lock/sshd
 	echo "OK"
 }
+
 stop() {
 	printf "Stopping sshd: "
 	killall sshd
 	rm -f /var/lock/sshd
 	echo "OK"
 }
+
 restart() {
 	stop
 	start

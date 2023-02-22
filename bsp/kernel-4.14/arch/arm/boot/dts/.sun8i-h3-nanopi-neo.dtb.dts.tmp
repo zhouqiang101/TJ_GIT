@@ -1220,13 +1220,7 @@
   #size-cells = <0>;
   poll-interval = <20>;
   autorepeat;
-
-  userkey {
-   label = "userkey";
-   debounce-interval = <10>;
-   linux,code = <0x1d3>;
-   gpios = <&pio 2 2 1>;
-  };
+# 103 "arch/arm/boot/dts/sun8i-h3-nanopi.dtsi"
  };
 
  vdd_cpux: gpio-regulator {
@@ -1398,22 +1392,20 @@
 };
 
 &uart2 {
-
- status = "disabled";
+ pinctrl-names = "default";
+    pinctrl-0 = <&uart2_pins>;
+ status = "okay";
 };
 
 &uart3 {
-
  status = "disabled";
 };
 
 &i2c0 {
-
  status = "disabled";
 };
 
 &i2c1 {
-
  status = "disabled";
 };
 
@@ -1421,15 +1413,15 @@
  status = "okay";
 
 
- ad82586c@30 {
-  compatible = "esmt,ad82586c";
-  reg = <0x30>;
+ audioboxdevice@51 {
+  compatible = "hl,audiobox";
+  reg = <0x51>;
  };
 
 
- es7242@13 {
-  compatible = "es,es7242";
-  reg = <0x13>;
+ tm1680@72 {
+  compatible = "audcom,tm1680";
+  reg = <0x72>;
  };
 # 313 "arch/arm/boot/dts/sun8i-h3-nanopi.dtsi"
 };

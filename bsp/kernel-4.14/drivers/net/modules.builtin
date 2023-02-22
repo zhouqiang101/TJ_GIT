@@ -10,3 +10,13 @@ kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-sun8i.ko
 kernel/drivers/net/ethernet/stmicro/stmmac/dwmac-generic.ko
 kernel/drivers/net/phy/libphy.ko
 kernel/drivers/net/phy/fixed_phy.ko
+kernel/drivers/net/usb/hso.ko
+kernel/drivers/net/usb/cdc_ether.ko
+kernel/drivers/net/usb/cdc_eem.ko
+kernel/drivers/net/usb/rndis_host.ko
+kernel/drivers/net/usb/cdc_subset.ko
+kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/sierra_net.ko
+kernel/drivers/net/usb/cdc_ncm.ko
+kernel/drivers/net/usb/qmi_wwan.ko
+kernel/drivers/net/usb/cdc_mbim.ko

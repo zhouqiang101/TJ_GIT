@@ -7,8 +7,8 @@ obj-$(CONFIG_IBM_ASM)		+= ibmasm/
 obj-$(CONFIG_AD525X_DPOT)	+= ad525x_dpot.o
 obj-$(CONFIG_AD525X_DPOT_I2C)	+= ad525x_dpot-i2c.o
 obj-$(CONFIG_AD525X_DPOT_SPI)	+= ad525x_dpot-spi.o
-obj-$(CONFIG_AD82586C_I2C)	+= ad82586c.o audiobox_cfg.o
-obj-$(CONFIG_ES7242_I2C)	+= es7242.o
+obj-$(CONFIG_AUDBOX_DEVICE_H3)	+= audiobox_device_h3.o
+obj-$(CONFIG_AUDBOX_DEVICE_TM1680)	+= audiobox_device_tm1680.o
 obj-$(CONFIG_AUDCOM_REMOTE)	+= audcom_remote.o
 obj-$(CONFIG_INTEL_MID_PTI)	+= pti.o
 obj-$(CONFIG_ATMEL_SSC)		+= atmel-ssc.o
@@ -75,10 +75,6 @@ OBJCOPYFLAGS_lkdtm_rodata_objcopy.o := \
 			--set-section-flags .text=alloc,readonly \
 			--rename-section .text=.rodata
 targets += lkdtm_rodata.o lkdtm_rodata_objcopy.o
-
-$(obj)/ad82586c.o:
-	@echo "Using audcom proprietary code (ad82586c.bin)"
-	@cp $(obj)/ad82586c.bin $(obj)/ad82586c.o
 
 $(obj)/lkdtm_rodata_objcopy.o: $(obj)/lkdtm_rodata.o FORCE
 	$(call if_changed,objcopy)

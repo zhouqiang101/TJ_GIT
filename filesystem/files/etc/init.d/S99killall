@@ -5,26 +5,6 @@ case "$1" in
 		;;
 	stop)
 		echo "Stopping all user processes ..."
-		killall -w -9 hl_sysmanager >/dev/null 2>&1
-		killall -w -9 hl_netconf >/dev/null 2>&1
-		killall -w -9 hl_ltedog >/dev/null 2>&1
-		killall -w -9 apmode_start >/dev/null 2>&1
-		killall -w -9 factory_reset >/dev/null 2>&1
-		killall -w -9 hl_dog.sh >/dev/null 2>&1
-		killall -w -9 hl_lua >/dev/null 2>&1
-		killall -w -9 freset_dog >/dev/null 2>&1
-		killall -w -9 dhcpcd >/dev/null 2>&1
-		killall -w -9 dnsmasq >/dev/null 2>&1
-		killall -w -9 wpa_supplicant >/dev/null 2>&1
-		killall -w -9 wpa_cli >/dev/null 2>&1
-		killall -w -9 hostapd >/dev/null 2>&1
-		killall -w -9 pppd >/dev/null 2>&1
-		killall -w -9 chat >/dev/null 2>&1
-		killall -w -9 madplay >/dev/null 2>&1
-		killall -w -9 mpg123 >/dev/null 2>&1
-		killall -w -9 aplay >/dev/null 2>&1
-		killall -w -9 playzero >/dev/null 2>&1
-		killall -w -9 playtool >/dev/null 2>&1
 		/bin/sync
 		;;
 	restart|reload)

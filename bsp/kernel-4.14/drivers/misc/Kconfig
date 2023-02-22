@@ -51,13 +51,13 @@ config AD525X_DPOT_SPI
 	  To compile this driver as a module, choose M here: the
 	  module will be called ad525x_dpot-spi.
 
-config AD82586C_I2C
-	tristate "ESMT AD82586C I2C control"
-	depends on I2C
+config AUDBOX_DEVICE_H3
+	tristate "Heard-Learn audio box device (H3)"
+	depends on MACH_SUN8I
 
-config ES7242_I2C
-	tristate "Everest ES7242 I2C control"
-	depends on I2C
+config AUDBOX_DEVICE_TM1680
+	tristate "Heard-Learn audio box device display (H3)"
+	depends on MACH_SUN8I
 
 config AUDCOM_REMOTE
 	tristate "Audcom 2.4G remote controller"

@@ -12,20 +12,6 @@ then
   . /etc/default/$NAME
 fi
 
-# Enter factory mode when '/boot/hw.conf' missing or '/boot/factory.mode' exists
-ENTER_FACTORYMODE=0
-if [ ! -f /boot/hw.conf ]; then
-    ENTER_FACTORYMODE=1
-else
-    if [ -f /boot/factory.mode ]; then
-        ENTER_FACTORYMODE=1
-    fi
-fi
-# Do not sync time in factory mode
-if [ $ENTER_FACTORYMODE -eq 1 ]; then
-    exit 0
-fi
-
 case "$1" in
   start)
     printf "Starting $NAME: "

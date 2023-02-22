@@ -92,12 +92,14 @@
 		poll-interval = <20>;
 		autorepeat;
 
+		/*
 		userkey {
 			label = "userkey";
 			debounce-interval = <10>;
 			linux,code = <KEY_FN_F2>;
 			gpios = <&pio 2 2 GPIO_ACTIVE_LOW>;  // PC2
 		};
+		*/
 	};
 
 	vdd_cpux: gpio-regulator {
@@ -269,38 +271,36 @@
 };
 
 &uart2 {
-	// disable uart2, use as gpio
-	status = "disabled";
+	pinctrl-names = "default";
+    pinctrl-0 = <&uart2_pins>;
+	status = "okay";
 };
 
 &uart3 {
-	// disable uart3, use as gpio
 	status = "disabled";
 };
 
 &i2c0 {
-	// disable i2c0, use as gpio
 	status = "disabled";
 };
 
 &i2c1 {
-	// against i2s0, so disable
 	status = "disabled";
 };
 
 &i2c2 {
 	status = "okay";
 
-	// class 'D' speaker amplifier, ad82586c
-	ad82586c@30 {
-		compatible = "esmt,ad82586c";
-		reg = <0x30>;
+	// Audio-box device
+	audioboxdevice@51 {
+		compatible = "hl,audiobox";
+		reg = <0x51>;
 	};
 
-	// ES7242 audio switcher
-	es7242@13 {
-		compatible = "es,es7242";
-		reg = <0x13>;
+	// TM1680 device
+	tm1680@72 {
+		compatible = "audcom,tm1680";
+		reg = <0x72>;
 	};
 
 	/*
@@ -364,7 +364,7 @@
 };
 
 &emac {
-	local-mac-address = [ 00 00 00 00 00 00 ];	
+	local-mac-address = [ 00 00 00 00 00 00 ];
 };
 
 &codec {

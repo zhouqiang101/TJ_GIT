@@ -1,1 +1,1 @@
-cmd_drivers/net/usb/built-in.o :=  rm -f drivers/net/usb/built-in.o; arm-linux-ar rcSTPD drivers/net/usb/built-in.o
+cmd_drivers/net/usb/built-in.o :=  rm -f drivers/net/usb/built-in.o; arm-linux-ar rcSTPD drivers/net/usb/built-in.o drivers/net/usb/hso.o drivers/net/usb/cdc_ether.o drivers/net/usb/cdc_eem.o drivers/net/usb/rndis_host.o drivers/net/usb/cdc_subset.o drivers/net/usb/usbnet.o drivers/net/usb/sierra_net.o drivers/net/usb/cdc_ncm.o drivers/net/usb/qmi_wwan.o drivers/net/usb/cdc_mbim.o 

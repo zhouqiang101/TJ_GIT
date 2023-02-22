@@ -1,1 +1,0 @@
-cmd_drivers/usb/serial/qcserial.ko := arm-linux-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/serial/qcserial.ko drivers/usb/serial/qcserial.o drivers/usb/serial/qcserial.mod.o ;  true
